@@ -46,6 +46,15 @@ a:visited {
   margin-right: 10px;
 }
 
+input {
+  margin: 0.6rem 0.3rem;
+  padding: 0 1.3rem;
+  width: 90.7%;
+  height: 1.7em;
+  font-size: 40px;
+  text-align: right;
+}
+
 button {
   border-radius: 10px;
   background-color: rgb(247, 140, 140);
