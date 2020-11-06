@@ -1,0 +1,28 @@
+/*
+    Any class with c- in front of it stands for custom. Meaning it is *not* a Bootstrap class.
+    For example, Bootstrap has a class named "border".
+    So we use "c-border" because we don't want to override "border". We want to start a new class.
+*/
+
+.container {
+  width: 450px;
+}
+
+.c-border {
+  border: 1px solid black;
+}
+
+.squircle {
+  border-radius: 10px;
+}
+
+button {
+  border-radius: 10px;
+  background-color: red;
+  border: none;
+  padding: 1em 2em;
+}
+
+main {
+  border: 1px solid black;
+}
