@@ -1,5 +1,9 @@
 /**** Shared Styles ****/
 
+.margin {
+  margin: 0.3em;
+}
+
 .d-flex {
   display: flex;
 }
@@ -16,16 +20,23 @@
   border-radius: 10px;
 }
 
+
+
+
+
 .calc-container {
   width: fit-content;
   padding: 0.5em 1em;
+}
+
+.url-row > * {
+  margin-right: 10px;
 }
 
 button {
   border-radius: 10px;
   background-color: rgb(247, 140, 140);
   border: none;
-  /* padding: 1em 2em; */
   font-size: 19px;
   width: 7em;
   height: 3em;
