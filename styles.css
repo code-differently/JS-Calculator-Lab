@@ -25,6 +25,9 @@ button {
   border-radius: 10px;
   background-color: rgb(247, 140, 140);
   border: none;
-  padding: 1em 2em;
+  /* padding: 1em 2em; */
+  font-size: 19px;
+  width: 7em;
+  height: 3em;
   margin: 0.3em;
 }
