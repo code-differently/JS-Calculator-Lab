@@ -18,7 +18,7 @@
 
 .calc-container {
   width: fit-content;
-  padding: 1em 1.5em;
+  padding: 0.5em 1em;
 }
 
 button {
@@ -26,10 +26,5 @@ button {
   background-color: rgb(247, 140, 140);
   border: none;
   padding: 1em 2em;
-  margin-left: 1em;
-}
-
-/* Buttons push away from button their left, except for the first button of each row. */
-.row > :nth-child(1) {
-  margin-left: 0;
+  margin: 0.3em;
 }
