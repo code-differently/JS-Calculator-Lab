@@ -1,14 +1,14 @@
-/*
-    Any class with c- in front of it stands for custom. Meaning it is *not* a Bootstrap class.
-    For example, Bootstrap has a class named "border".
-    So we use "c-border" because we don't want to override "border". We want to start a new class.
-*/
+/**** Shared Styles ****/
 
-.container {
-  width: 450px;
+.d-flex {
+  display: flex;
 }
 
-.c-border {
+.justify-center {
+  justify-content: center;
+}
+
+.border {
   border: 1px solid black;
 }
 
@@ -16,13 +16,20 @@
   border-radius: 10px;
 }
 
-button {
-  border-radius: 10px;
-  background-color: red;
-  border: none;
-  padding: 1em 2em;
+.calc-container {
+  width: fit-content;
+  padding: 1em 1.5em;
 }
 
-main {
-  border: 1px solid black;
+button {
+  border-radius: 10px;
+  background-color: rgb(247, 140, 140);
+  border: none;
+  padding: 1em 2em;
+  margin-left: 1em;
+}
+
+/* Buttons push away from button their left, except for the first button of each row. */
+.row > :nth-child(1) {
+  margin-left: 0;
 }
