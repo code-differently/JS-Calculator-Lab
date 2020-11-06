@@ -53,3 +53,15 @@ button {
   color: white;
   font-weight: bold;
 }
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(215, 217, 221);
+}
+
+button.btn-light-gray:hover {
+  background-color: rgb(232, 234, 235);
+}
+button.btn-blue:hover {
+  background-color: rgb(77, 139, 241);
+}
