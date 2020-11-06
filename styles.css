@@ -20,6 +20,19 @@
   border-radius: 10px;
 }
 
+a:link {
+  color: blue;
+}
+
+a:hover {
+  color: teal;
+}
+
+a:visited {
+  color: purple;
+}
+
+
 
 
 
