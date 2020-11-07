@@ -1,5 +1,6 @@
 let scientificCalculatorActive = false;
-let scientificButton = document.querySelector("a");
+let scientificButton = document.getElementById("scientific-button");
+let standardButton = document.getElementById("standard-button");
 
 // Enable/disable Scientific Calculator
 scientificButton.addEventListener("click", () => {
