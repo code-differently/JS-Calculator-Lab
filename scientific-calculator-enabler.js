@@ -1,68 +1,112 @@
 let scientificCalculatorActive = false;
-
-window.addEventListener("resize", () => {
-  if (document.body.clientWidth < 800) {
-    console.log("now");  
-  }
-});
-
 let scientificButton = document.querySelector("a");
-  a.addEventListener("click", () => {
-    scientificCalculatorActive = !scientificCalculatorActive;
-    if (scientificCalculatorActive) {
-      enableScientificCalculator();
-    } else {
-      disableScientificCalculator();
-    }
+
+// Enable/disable Scientific Calculator
+scientificButton.addEventListener("click", () => {
+  scientificCalculatorActive = !scientificCalculatorActive;
+  if (scientificCalculatorActive) {
+    addScientificButtonsToSide();
+  } else {
+    removeScientificButtons();
+  }
 });
 
-function enableScientificCalculator() {
-  let rows = document.getElementsByClassName("row");
-  for (let row = 0; row < rows.length; row++) {
-    let newHTML = getScientificButtons(row);
-    let existingHTML = rows[row].innerHTML;
-    rows[row].innerHTML = newHTML + existingHTML;
-  }  
-}
-
-function disableScientificCalculator() {
-  let scientificButtons = document.querySelectorAll(".scientific");
-  for (let row = 0; row < scientificButtons.length; row++) {
-    scientificButtons[row].remove();
-  }  
-}
-
-function getScientificButtons(row) {
-  switch(row) {
-    case 0:
-      return `
-        <button class="scientific btn-light-gray">Rad</button>
-        <button class="scientific btn-light-gray">Deg</button>
-        <button class="scientific btn-light-gray">x!</button>
-      `
-    case 1:
-      return `
-        <button class="scientific btn-light-gray">Inv</button>
-        <button class="scientific btn-light-gray">sin</button>
-        <button class="scientific btn-light-gray">In</button>
-      `
-    case 2:
-      return `
-        <button class="scientific btn-light-gray">Pie</button>
-        <button class="scientific btn-light-gray">cos</button>
-        <button class="scientific btn-light-gray">log</button>
-      `
-    case 3:
-      return `
-        <button class="scientific btn-light-gray">e</button>
-        <button class="scientific btn-light-gray">tan</button>
-        <button class="scientific btn-light-gray">check</button>
-      `
-    case 4:
-      return `
-        <button class="scientific btn-light-gray">Ans</button>
-        <button class="scientific btn-light-gray">EXP</button>
-        <button class="scientific btn-light-gray">X^y</button>
-      `
+// Move scientific buttons to the left or bottom of the calculator depending on the screen's width.
+window.addEventListener("resize", () => {
+  if (scientificCalculatorActive) {
+    if (document.body.clientWidth < 800) {
+      removeScientificButtons();
+      addScientificButtonsToBottom();
+    } else {
+      removeScientificButtons();
+      addScientificButtonsToSide();
+    }
   }
+});
+
+// All scientific buttons have the .scientific class.
+function removeScientificButtons() {
+  let scientificButtons = document.querySelectorAll(".scientific");
+  for (let i = 0; i < scientificButtons.length; i++) {
+    scientificButtons[i].remove();
+  }
+}
+
+// Creates 3 new buttons for every row
+function addScientificButtonsToSide() {
+  let rows = document.getElementsByClassName("row");
+
+  if (rows.length > 4) {
+    console.warn("There were more rows detected than expected.");
+  }
+
+  rows[0].innerHTML =
+    `
+    <button class="scientific btn-light-gray">Rad</button>
+    <button class="scientific btn-light-gray">Deg</button>
+    <button class="scientific btn-light-gray">x!</button>
+  ` + rows[0].innerHTML;
+
+  rows[1].innerHTML =
+    `
+    <button class="scientific btn-light-gray">Inv</button>
+    <button class="scientific btn-light-gray">sin</button>
+    <button class="scientific btn-light-gray">In</button>
+  ` + rows[1].innerHTML;
+
+  rows[2].innerHTML =
+    `
+    <button class="scientific btn-light-gray">Pie</button>
+    <button class="scientific btn-light-gray">cos</button>
+    <button class="scientific btn-light-gray">log</button>
+  ` + rows[2].innerHTML;
+
+  rows[3].innerHTML =
+    `
+    <button class="scientific btn-light-gray">e</button>
+    <button class="scientific btn-light-gray">tan</button>
+    <button class="scientific btn-light-gray">check</button>
+  ` + rows[3].innerHTML;
+  rows[4].innerHTML =
+    `
+    <button class="scientific btn-light-gray">Ans</button>
+    <button class="scientific btn-light-gray">EXP</button>
+    <button class="scientific btn-light-gray">X^y</button>
+  ` + rows[4].innerHTML;
+}
+
+// Creates 5 new rows and adds buttons to them.
+function addScientificButtonsToBottom() {
+  let calcContainer = document.getElementById("calc-container");
+  calcContainer.innerHTML += `
+    <div class="scientific">
+    <button class="scientific btn-light-gray">Rad</button>
+    <button class="scientific btn-light-gray">Deg</button>
+    <button class="scientific btn-light-gray">x!</button>
+    </div>
+    
+    <div class="scientific">
+    <button class="scientific btn-light-gray">Inv</button>
+    <button class="scientific btn-light-gray">sin</button>
+    <button class="scientific btn-light-gray">In</button>
+    </div>
+    
+    <div class="scientific">
+    <button class="scientific btn-light-gray">Pie</button>
+    <button class="scientific btn-light-gray">cos</button>
+    <button class="scientific btn-light-gray">log</button>
+    </div>
+    
+    <div class="scientific">
+    <button class="scientific btn-light-gray">e</button>
+    <button class="scientific btn-light-gray">tan</button>
+    <button class="scientific btn-light-gray">check</button>
+    </div>
+    
+    <div class="scientific">
+    <button class="scientific btn-light-gray">Ans</button>
+    <button class="scientific btn-light-gray">EXP</button>
+    <button class="scientific btn-light-gray">X^y</button>
+    </div>
+  `;
 }
