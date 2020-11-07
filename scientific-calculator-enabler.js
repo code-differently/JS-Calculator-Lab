@@ -1,25 +1,32 @@
 let scientificCalculatorActive = false;
-let scientificButton = document.getElementById("scientific-button");
 let standardButton = document.getElementById("standard-button");
+let scientificButton = document.getElementById("scientific-button");
+
+standardButton.addEventListener("click", () => {
+  console.log("CALLED");
+  console.log("Bool is " + scientificCalculatorActive);
+  if (scientificCalculatorActive) {
+    removeScientificButtons();
+    scientificCalculatorActive = false;
+  }
+});
 
 // Enable/disable Scientific Calculator
 scientificButton.addEventListener("click", () => {
-  scientificCalculatorActive = !scientificCalculatorActive;
-  if (scientificCalculatorActive) {
-    if (document.body.clientWidth < 800) {
+  if (!scientificCalculatorActive) {
+    if (document.body.clientWidth < 1105) {
       addScientificButtonsToBottom();
     } else {
       addScientificButtonsToSide();
     }
-  } else {
-    removeScientificButtons();
+    scientificCalculatorActive = true;
   }
 });
 
 // Move scientific buttons to the left or bottom of the calculator depending on the screen's width.
 window.addEventListener("resize", () => {
   if (scientificCalculatorActive) {
-    if (document.body.clientWidth < 800) {
+    if (document.body.clientWidth < 1105) {
       removeScientificButtons();
       addScientificButtonsToBottom();
     } else {
@@ -32,8 +39,10 @@ window.addEventListener("resize", () => {
 // All scientific buttons have the .scientific class.
 function removeScientificButtons() {
   let scientificButtons = document.querySelectorAll(".scientific");
+  console.log("called");
   for (let i = 0; i < scientificButtons.length; i++) {
     scientificButtons[i].remove();
+    console.log("looping");
   }
 }
 
@@ -41,7 +50,7 @@ function removeScientificButtons() {
 function addScientificButtonsToSide() {
   let rows = document.getElementsByClassName("row");
 
-  if (rows.length > 4) {
+  if (rows.length > 5) {
     console.warn("There were more rows detected than expected.");
   }
 
