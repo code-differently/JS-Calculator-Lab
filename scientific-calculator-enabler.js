@@ -1,6 +1,12 @@
 let scientificCalculatorActive = false;
 
-let tag = document.querySelector("a");
+window.addEventListener("resize", () => {
+  if (document.body.clientWidth < 800) {
+    console.log("now");  
+  }
+});
+
+let scientificButton = document.querySelector("a");
   a.addEventListener("click", () => {
     scientificCalculatorActive = !scientificCalculatorActive;
     if (scientificCalculatorActive) {
@@ -21,7 +27,6 @@ function enableScientificCalculator() {
 
 function disableScientificCalculator() {
   let scientificButtons = document.querySelectorAll(".scientific");
-  console.log(scientificButtons);
   for (let row = 0; row < scientificButtons.length; row++) {
     scientificButtons[row].remove();
   }  

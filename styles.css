@@ -35,8 +35,6 @@ a:visited {
 
 
 
-
-
 .calc-container {
   width: fit-content;
   padding: 0.5em 1em;
@@ -87,4 +85,11 @@ button.btn-light-gray:hover {
 }
 button.btn-blue:hover {
   background-color: rgb(77, 139, 241);
+}
+
+
+@media (max-width: 1074px) {
+  .scientific {
+  display: none;
+}
 }
