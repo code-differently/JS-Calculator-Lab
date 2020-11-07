@@ -5,7 +5,11 @@ let scientificButton = document.querySelector("a");
 scientificButton.addEventListener("click", () => {
   scientificCalculatorActive = !scientificCalculatorActive;
   if (scientificCalculatorActive) {
-    addScientificButtonsToSide();
+    if (document.body.clientWidth < 800) {
+      addScientificButtonsToBottom();
+    } else {
+      addScientificButtonsToSide();
+    }
   } else {
     removeScientificButtons();
   }

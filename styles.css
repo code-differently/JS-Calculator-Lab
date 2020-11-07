@@ -1,6 +1,6 @@
 /**** Shared Styles ****/
 
-.margin {
+.margin-3 {
   margin: 0.3em;
 }
 
@@ -31,9 +31,6 @@ a:hover {
 a:visited {
   color: purple;
 }
-
-
-
 
 #calc-container {
   width: fit-content;
@@ -86,10 +83,9 @@ button.btn-light-gray:hover {
 button.btn-blue:hover {
   background-color: rgb(77, 139, 241);
 }
-/* 
 
-@media (max-width: 1074px) {
-  .scientific {
-  display: none;
+@media (max-width: 630px) {
+  button {
+    width: 25%;
+  }
 }
-} */
