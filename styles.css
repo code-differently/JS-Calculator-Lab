@@ -63,12 +63,13 @@ button {
 }
 
 .rad-deg-button {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 14.5em;
+  width: 14.8em;
   padding: 0 1.2em;
   color: rgb(140, 142, 145);
+}
+
+.rad-deg-button > * {
+  padding: 1.2em;
 }
 
 .rad-deg-button :first-child {
