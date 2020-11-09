@@ -1,31 +1,33 @@
-let scientificCalculatorActive = false;
-let standardButton = document.getElementById("standard-button");
-let scientificButton = document.getElementById("scientific-button");
+let scientificCalculatorEnabled = false;
+let standardButton = document.getElementById("a-button");
+let scientificButton = document.getElementById("b-button");
 
+// Disable scientific buttons
 standardButton.addEventListener("click", () => {
-  console.log("CALLED");
-  console.log("Bool is " + scientificCalculatorActive);
-  if (scientificCalculatorActive) {
+  console.log("Standard button click");
+  if (scientificCalculatorEnabled) {
     removeScientificButtons();
-    scientificCalculatorActive = false;
+    scientificCalculatorEnabled = false;
   }
 });
 
-// Enable/disable Scientific Calculator
+// Enable scientific buttons
 scientificButton.addEventListener("click", () => {
-  if (!scientificCalculatorActive) {
+  console.log("Scientific button clicked");
+  if (!scientificCalculatorEnabled) {
     if (document.body.clientWidth < 1105) {
       addScientificButtonsToBottom();
     } else {
       addScientificButtonsToSide();
     }
-    scientificCalculatorActive = true;
+    scientificCalculatorEnabled = true;
   }
 });
 
-// Move scientific buttons to the left or bottom of the calculator depending on the screen's width.
+// Makes buttons responsive:
+// Moves scientific buttons to the left or bottom of the calculator depending on the screen's width.
 window.addEventListener("resize", () => {
-  if (scientificCalculatorActive) {
+  if (scientificCalculatorEnabled) {
     if (document.body.clientWidth < 1105) {
       removeScientificButtons();
       addScientificButtonsToBottom();
@@ -39,10 +41,8 @@ window.addEventListener("resize", () => {
 // All scientific buttons have the .scientific class.
 function removeScientificButtons() {
   let scientificButtons = document.querySelectorAll(".scientific");
-  console.log("called");
   for (let i = 0; i < scientificButtons.length; i++) {
     scientificButtons[i].remove();
-    console.log("looping");
   }
 }
 
@@ -94,33 +94,33 @@ function addScientificButtonsToBottom() {
   let calcContainer = document.getElementById("calc-container");
   calcContainer.innerHTML += `
     <div class="scientific">
-    <button class="scientific btn-light-gray">Rad</button>
-    <button class="scientific btn-light-gray">Deg</button>
-    <button class="scientific btn-light-gray">x!</button>
+      <button class="scientific btn-light-gray">Rad</button>
+      <button class="scientific btn-light-gray">Deg</button>
+      <button class="scientific btn-light-gray">x!</button>
     </div>
     
     <div class="scientific">
-    <button class="scientific btn-light-gray">Inv</button>
-    <button class="scientific btn-light-gray">sin</button>
-    <button class="scientific btn-light-gray">In</button>
+      <button class="scientific btn-light-gray">Inv</button>
+      <button class="scientific btn-light-gray">sin</button>
+      <button class="scientific btn-light-gray">In</button>
     </div>
     
     <div class="scientific">
-    <button class="scientific btn-light-gray">Pie</button>
-    <button class="scientific btn-light-gray">cos</button>
-    <button class="scientific btn-light-gray">log</button>
+      <button class="scientific btn-light-gray">Pie</button>
+      <button class="scientific btn-light-gray">cos</button>
+      <button class="scientific btn-light-gray">log</button>
     </div>
     
     <div class="scientific">
-    <button class="scientific btn-light-gray">e</button>
-    <button class="scientific btn-light-gray">tan</button>
-    <button class="scientific btn-light-gray">check</button>
+      <button class="scientific btn-light-gray">e</button>
+      <button class="scientific btn-light-gray">tan</button>
+      <button class="scientific btn-light-gray">check</button>
     </div>
     
     <div class="scientific">
-    <button class="scientific btn-light-gray">Ans</button>
-    <button class="scientific btn-light-gray">EXP</button>
-    <button class="scientific btn-light-gray">X^y</button>
+      <button class="scientific btn-light-gray">Ans</button>
+      <button class="scientific btn-light-gray">EXP</button>
+      <button class="scientific btn-light-gray">X^y</button>
     </div>
   `;
 }
