@@ -84,6 +84,16 @@ button.btn-blue:hover {
   background-color: rgb(77, 139, 241);
 }
 
+/* Hidden by default. Enabled by Javascript. */
+.scientific-btn-left {
+  display: none;
+}
+
+/* Hidden by default. Enabled by Javascript. */
+.scientific-btn-bottom {
+  display: none;
+}
+
 @media (max-width: 630px) {
   button {
     width: 25%;
