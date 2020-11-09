@@ -3,7 +3,7 @@ let standardButton = document.getElementById("standard-button");
 let scientificButton = document.getElementById("scientific-button");
 
 standardButton.addEventListener("click", () => {
-  enableScientificButtons();
+  disableScientificButtons();
 });
 
 scientificButton.addEventListener("click", () => {
@@ -11,24 +11,25 @@ scientificButton.addEventListener("click", () => {
 });
 
 function enableScientificButtons() {
-  position = getPositionToActivate();
-  // if (position == "left") {
-  //   let scientificBtnLeft = document.querySelectorAll("scientific-btn-left");
-  //   scientificBtnLeft.style.display = "block";
-  // } else {
-  //   let scientificBtnBottom = document.getElementsByClassName("scientific-btn-bottom");
-  //   scientificBtnBottom.style.display = "block";
-  // }
-  let scientificBtnLeft = document.querySelectorAll(".scientific-btn-left");
-  for (let i = 0; i < scientificBtnLeft.length; i++) {
-    scientificBtnLeft[i].style.display = "block";
+  let className = getClassToActivate();
+  let scientificButtons = document.querySelectorAll(className);
+  for (let i = 0; i < scientificButtons.length; i++) {
+    scientificButtons[i].style.display = "block";
   }
 }
 
-function getPositionToActivate() {
+function disableScientificButtons() {
+  let className = getClassToActivate();
+  let scientificButtons = document.querySelectorAll(className);
+  for (let i = 0; i < scientificButtons.length; i++) {
+    scientificButtons[i].style.display = "none";
+  }
+}
+
+function getClassToActivate() {
   if (document.body.clientWidth < 1105) {
-    return "left";
+    return ".scientific-btn-bottom";
   } else {
-    return "bottom";
+    return ".scientific-btn-left";
   }
 }
