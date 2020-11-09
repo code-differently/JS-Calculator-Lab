@@ -3,26 +3,19 @@ let standardButton = document.getElementById("standard-button");
 let scientificButton = document.getElementById("scientific-button");
 
 standardButton.addEventListener("click", () => {
-  disableScientificButtons();
+  toggleScientificButtons(false);
 });
 
 scientificButton.addEventListener("click", () => {
-  enableScientificButtons();
+  toggleScientificButtons(true);
 });
 
-function enableScientificButtons() {
+function toggleScientificButtons(enable) {
   let className = getClassToActivate();
   let scientificButtons = document.querySelectorAll(className);
+  let displayProperty = getNewDisplayProperty(enable);
   for (let i = 0; i < scientificButtons.length; i++) {
-    scientificButtons[i].style.display = "block";
-  }
-}
-
-function disableScientificButtons() {
-  let className = getClassToActivate();
-  let scientificButtons = document.querySelectorAll(className);
-  for (let i = 0; i < scientificButtons.length; i++) {
-    scientificButtons[i].style.display = "none";
+    scientificButtons[i].style.display = displayProperty;
   }
 }
 
@@ -32,4 +25,11 @@ function getClassToActivate() {
   } else {
     return ".scientific-btn-left";
   }
+}
+
+function getNewDisplayProperty(enable) {
+  if (enable) {
+    return "block";
+  }
+  return "none";
 }
