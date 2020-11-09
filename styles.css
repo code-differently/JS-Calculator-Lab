@@ -68,6 +68,11 @@ button {
   align-items: center;
   width: 14.5em;
   padding: 0 1.2em;
+  color: rgb(140, 142, 145);
+}
+
+.rad-deg-button :first-child {
+  color: black;
 }
 
 .btn-light-gray {
