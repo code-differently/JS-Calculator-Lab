@@ -112,4 +112,12 @@ button.btn-blue:hover {
   button {
     width: 25%;
   }
+
+  .rad-deg-button {
+    width: 53%;
+  }
+
+  .rad-deg-button > * {
+    padding: 0.8rem;
+  }
 }
