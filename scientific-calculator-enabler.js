@@ -1,9 +1,7 @@
 // By default, scientific buttons have a class set to display: none.
 // This script enables/disables them depending on the button pressed and the screen width.
 
-//let scientificButtonsEnabled = false;
-let scientificButtonsEnabled = true;
-enableScientificButtons();
+let scientificButtonsEnabled = false;
 let scientificButton = document.getElementById("scientific-button");
 let standardButton = document.getElementById("standard-button");
 
