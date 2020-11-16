@@ -1,5 +1,9 @@
 /**** Shared Styles ****/
 
+.row {
+  display: flex;
+}
+
 .margin-3 {
   margin: 0.3rem;
 }
@@ -43,9 +47,11 @@ a:visited {
 }
 
 input {
-  margin: 0.6rem 0.3rem;
+  /* margin: 0.6rem 0.3rem; */
+  margin: 0.3rem;
   padding: 0 1.3rem;
   width: 100%;
+  /* width: 80%; */
   height: 1.7em;
   font-size: 40px;
   text-align: right;
@@ -110,10 +116,10 @@ button.btn-blue:hover {
 /* Hidden by default. Enabled by Javascript. */
 .scientific-btn-bottom {
   display: none;
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
 }
 
-@media (max-width: 630px) {
+/* @media (max-width: 630px) {
   button {
     width: 25%;
   }
@@ -130,4 +136,4 @@ button.btn-blue:hover {
   .rad-deg-button > * {
     padding: 0.6rem;
   }
-}
+} */
