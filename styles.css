@@ -74,6 +74,7 @@ button {
   border-radius: 10px;
   background-color: rgb(247, 140, 140);
   border: none;
+  outline: none;
   font-size: 19px;
   width: 7rem;
   height: 3rem;
