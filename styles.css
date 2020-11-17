@@ -20,7 +20,7 @@
   border-radius: 10px;
 }
 
-a {
+/* a {
   color: blue;
 }
 
@@ -30,15 +30,25 @@ a:hover {
 
 a:visited {
   color: purple;
-}
+} */
 
 #standard-button {
   color: blue;
   text-decoration: underline;
 }
 
+#standard-button:hover {
+  color: rgb(197, 197, 0) !important;
+  cursor: pointer;
+}
+
 #scientific-button {
   color: black;
+}
+
+#scientific-button:hover {
+  color: rgb(197, 197, 0) !important;
+  cursor: pointer;
 }
 
 #calc-container {
