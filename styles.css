@@ -81,7 +81,7 @@ button {
 }
 
 .rad-deg-button {
-  width: 14.8rem;
+  width: 14.6rem;
   color: rgb(140, 142, 145);
 }
 
@@ -128,6 +128,12 @@ button.btn-blue:hover {
 @media (min-width: 1105px) {
   input {
     width: 98.7%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .rad-deg-button {
+    width: 15rem;
   }
 }
 
