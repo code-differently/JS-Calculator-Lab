@@ -33,7 +33,8 @@ a:visited {
 }
 
 #standard-button {
-  color: black;
+  color: blue;
+  text-decoration: underline;
 }
 
 #scientific-button {

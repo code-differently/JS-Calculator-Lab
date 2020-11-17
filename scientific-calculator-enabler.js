@@ -2,17 +2,19 @@
 // This script enables/disables them depending on the button pressed and the screen width.
 
 let scientificButtonsEnabled = false;
-let scientificButton = document.getElementById("scientific-button");
 let standardButton = document.getElementById("standard-button");
-
-scientificButton.addEventListener("click", () => {
-  enableScientificButtons();
-  scientificButtonsEnabled = true;
-});
+let scientificButton = document.getElementById("scientific-button");
 
 standardButton.addEventListener("click", () => {
   disableScientificButtons();
+  setActiveButtonColor(standardButton, scientificButton);
   scientificButtonsEnabled = false;
+});
+
+scientificButton.addEventListener("click", () => {
+  enableScientificButtons();
+  setActiveButtonColor(scientificButton, standardButton);
+  scientificButtonsEnabled = true;
 });
 
 // Responsive: Moves buttons to the left or bottom of calculator depending on screen width.
@@ -21,6 +23,17 @@ window.addEventListener("resize", () => {
     enableScientificButtons();
   }
 });
+
+function disableScientificButtons() {
+  setDisplayToNone(document.querySelectorAll(".scientific-btn-left"));
+  setDisplayToNone(document.querySelectorAll(".scientific-btn-bottom"));
+}
+
+function setDisplayToNone(buttons) {
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].style.display = "none";
+  }
+}
 
 // Enables buttons on the left or bottom depending on screen width.
 function enableScientificButtons() {
@@ -40,13 +53,11 @@ function getClassToActivate() {
   }
 }
 
-function disableScientificButtons() {
-  setDisplayToNone(document.querySelectorAll(".scientific-btn-left"));
-  setDisplayToNone(document.querySelectorAll(".scientific-btn-bottom"));
-}
+// According to the mockup, the active button is blue with an underline and the deactive button is black.
+function setActiveButtonColor(activeButton, disactiveButton) {
+  activeButton.style.color = "blue";
+  activeButton.style["text-decoration"] = "underline";
 
-function setDisplayToNone(buttons) {
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].style.display = "none";
-  }
+  disactiveButton.style.color = "black";
+  disactiveButton.style["text-decoration"] = "none";
 }
