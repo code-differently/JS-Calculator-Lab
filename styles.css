@@ -1,9 +1,5 @@
 /**** Shared Styles ****/
 
-.row {
-  display: flex;
-}
-
 .margin-3 {
   margin: 0.3rem;
 }
@@ -38,7 +34,6 @@ a:visited {
 
 #calc-container {
   width: fit-content;
-  /* width: 400px; */
   padding: 0.5rem 1rem;
 }
 
@@ -47,21 +42,18 @@ a:visited {
   font-size: 19px;
 }
 
+.row {
+  display: flex;
+}
+
 .input-container {
   margin: 0.3rem;
   margin-right: 0;
   padding-right: 0;
   width: fit-content;
-
-  /* width: 100%; */
-  /* border: 1px solid red; */
 }
 
 input {
-  /* margin: 0.6rem 0.3rem; */
-  /* margin: 0.3rem; */
-  /* padding: 0 1.3rem; */
-  /* width: 100%; */
   margin: 0.3rem;
   width: 94%;
   height: 1.7em;
@@ -128,7 +120,6 @@ button.btn-blue:hover {
 /* Hidden by default. Enabled by Javascript. */
 .scientific-btn-bottom {
   display: none;
-  /* margin-left: 1.5rem; */
 }
 
 @media (min-width: 1105px) {
@@ -156,28 +147,3 @@ button.btn-blue:hover {
     padding: 0.6rem;
   }
 }
-
-/* @media (max-width: 630px) {
-  button {
-    width: 25%;
-  }
-} */
-
-/* @media (max-width: 630px) {
-  button {
-    width: 25%;
-  }
-
-  .scientific-btn-bottom {
-    display: none;
-    margin-left: 0rem;
-  }
-
-  .rad-deg-button {
-    width: 53%;
-  }
-
-  .rad-deg-button > * {
-    padding: 0.6rem;
-  }
-} */
