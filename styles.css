@@ -139,11 +139,29 @@ button.btn-blue:hover {
 
 @media (max-width: 542px) {
   input {
-    width: 100%;
+    width: 97%;
     margin-right: 0;
     padding-right: 0;
   }
+
+  button {
+    width: 25%;
+  }
+
+  .rad-deg-button {
+    width: 53%;
+  }
+
+  .rad-deg-button > * {
+    padding: 0.6rem;
+  }
 }
+
+/* @media (max-width: 630px) {
+  button {
+    width: 25%;
+  }
+} */
 
 /* @media (max-width: 630px) {
   button {
