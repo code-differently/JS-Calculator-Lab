@@ -32,6 +32,14 @@ a:visited {
   color: purple;
 }
 
+#standard-button {
+  color: black;
+}
+
+#scientific-button {
+  color: black;
+}
+
 #calc-container {
   width: fit-content;
   padding: 0.5rem 1rem;
