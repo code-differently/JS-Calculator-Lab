@@ -43,7 +43,7 @@ a:visited {
 
 #calc-container {
   width: fit-content;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
 }
 
 .url-row > * {
@@ -55,15 +55,8 @@ a:visited {
   display: flex;
 }
 
-.input-container {
-  margin: 0.3rem;
-  margin-right: 0;
-  padding-right: 0;
-  width: fit-content;
-}
-
 input {
-  margin: 0.3rem;
+  margin: 0.7rem 0.3rem;
   width: 94%;
   height: 1.7em;
   font-size: 40px;
