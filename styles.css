@@ -120,6 +120,7 @@ button.btn-blue:hover {
 /* Hidden by default. Enabled by Javascript. */
 .scientific-btn-bottom {
   display: none;
+  margin-left: 0.5rem;
 }
 
 @media (min-width: 1105px) {
@@ -137,6 +138,10 @@ button.btn-blue:hover {
 
   button {
     width: 25%;
+  }
+
+  .scientific-btn-bottom {
+    margin-left: 0;
   }
 
   .rad-deg-button {
