@@ -37,7 +37,8 @@ a:visited {
 }
 
 #calc-container {
-  /* width: fit-content; */
+  width: fit-content;
+  /* width: 400px; */
   padding: 0.5rem 1rem;
 }
 
@@ -46,12 +47,23 @@ a:visited {
   font-size: 19px;
 }
 
+.input-container {
+  margin: 0.3rem;
+  margin-right: 0;
+  padding-right: 0;
+  width: fit-content;
+
+  /* width: 100%; */
+  /* border: 1px solid red; */
+}
+
 input {
   /* margin: 0.6rem 0.3rem; */
-  margin: 0.3rem;
+  /* margin: 0.3rem; */
   /* padding: 0 1.3rem; */
   /* width: 100%; */
-  width: 95%;
+  margin: 0.3rem;
+  width: 94%;
   height: 1.7em;
   font-size: 40px;
   text-align: right;
@@ -117,6 +129,14 @@ button.btn-blue:hover {
 .scientific-btn-bottom {
   display: none;
   /* margin-left: 1.5rem; */
+}
+
+@media (min-width: 1105px) {
+  input {
+    width: 98.7%;
+    margin-right: 0;
+    padding-right: 0;
+  }
 }
 
 /* @media (max-width: 630px) {
