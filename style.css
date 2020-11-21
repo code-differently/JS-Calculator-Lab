@@ -1,0 +1,84 @@
+.calcLocation {
+    margin: center;
+    display: grid; 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calcGrid {
+    height: 446px;
+    width: 529px;
+    background-color: #ffffff;
+    padding-top: 25px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 27px;
+    border: 1px solid #dfe1e5;
+    border-radius: 10px;
+}
+
+.calcSwitch {
+    width: 525px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+
+}
+
+.calcSwitch span {
+    font-size: 20px;
+}
+
+.display {
+    width: 485px;
+    height: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 122px;
+    height: 54px;
+    font-size: 20px;
+    margin-right: 9px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: .5px solid #f1f3f4;
+    background-color: #f1f3f4;
+}
+
+.fourthButton {
+    margin-right: 0px;
+    background-color: #dfe1e5;
+
+}
+
+#scientificBtn {
+    text-decoration: none;
+    color: black;
+}
+
+#standardBtn {
+    color: #3f48cc;
+}
+
+#pipe {
+    color: #dfe1e5;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#r1-1, #r1-2, #r1-3 {
+    background-color: #dfe1e5;
+}
+
+#r5-3 {
+    color: white;
+    background-color: #4285f4;
+    font-weight: bold;
+}
