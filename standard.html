@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="standardStyles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+  <div class="calc-container">
+  <div class="calc-grid">
+
+    <div class="standard-scientific-btn">
+        <span><a href="standard.html" id="standard">Standard</a></span> <span class="stick">|</span><span><a href="scientific.html" id="scientific">Scientific</a></span>
+    </div>
+
+    <div class="display">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand">0</div>
+    </div>
+      
+    
+    <div class="row1">
+        <button data-number id="darker-gray" class="row1-1">(</button>
+          <button data-number id="darker-gray" class="row1-2">)</button>
+          <button data-number id="darker-gray" class="row1-3">%</button>
+          <button data-all-clear id="darker-gray" class="row1-4">AC</button>
+      </div>
+
+    <div class="row2">
+          <button data-number class="row2-1">7</button>
+          <button data-number class="row2.2">8</button>
+          <button data-number class="row2.3">9</button>
+          <button data-operation id="darker-gray" class="row2.4">&divide</button>
+      </div>
+      <div class="row3">
+          <button data-number class="row3-1">4</button>
+          <button data-number class="row3.2">5</button>
+          <button data-number class="row3.3">6</button>
+          <button data-operation id="darker-gray" class="row3.4">x</button>
+      </div>
+      <div class="row4">
+          <button data-number class="row4-1">1</button>
+          <button data-number class="row4.2">2</button>
+          <button data-number class="row4.3">3</button>
+          <button data-operation id="darker-gray"class="row4.4">-</button>
+      </div>
+      <div class="row5">
+          <button data-number class="row5-1">0</button>
+          <button data-number class="row5-2">.</button>
+          <button data-equals id="blue" class="row5-3">=</button>
+          <button data-operation id="darker-gray" class="row5.4">+</button>
+      </div>
+  </div>
+ </div>
+</div>
+
+  
+    
+  
+    
+    <script src="standard.js"></script>
+    <!-- The following imports JQuery and Popper for Bootstrap to work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
