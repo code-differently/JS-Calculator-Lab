@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            <title>Calculators</title>
+            <link rel="stylesheet" href="/styles/style.css">
+          
+        </head>
+        <style>
+
+            *{  box-sizing: border-box;
+                font-family: Arial, sans-serif;
+                font-weight: normal;    }
+            
+            body {
+                padding: 0;
+                background: white;
+                width: 595px;
+                height: 512px;     }
+            
+            .calculator {
+                margin: 0 auto;
+                border: 2px solid #dfe1e5;
+                border-radius: 10px;
+                justify-content: center;
+                align-content: center;
+                padding: 20px;    }
+            
+            .calculator input {
+                background: none;
+                width: 98%;
+                font-size: 32px;
+                text-align: right;
+                border: 2px solid #dfe1e5;
+                border-radius: 15px;
+                margin: 5px;
+                padding: 17px;     }
+
+            .container {
+                font-size: 17px;
+                color: #3f48cc; 
+                padding-bottom: 20px; }
+
+            .cal-btn {
+                cursor: auto;
+                font-size: 20px;
+                outline: none;
+                height: 54px;
+                width: 123px; 
+                border-radius: 10px;
+                border: none;  }
+
+            .calculator-buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-gap: 12px;  
+                padding-top: 20px;  }
+            
+            .cal-btn:hover {
+                background-color: rgba(248, 173, 11, 0.932);
+                transform: translateY(4px);     }
+                                   
+            .btn-function{
+                background-color: #dfe1e5;
+                color: #202124;            }
+
+            .btn-special{
+                background-color: #4285f4;
+                color: white;          }
+   
+        </style>
+
+        <body>
+                
+            <div class="calculator">
+                        
+                <div class="container">
+                    <a href="#">Standard</a>  |  <a href="#">Scientific</a>
+                </div>
+
+                <input type="number" value="0">
+
+                <div class="calculator-buttons">
+                    <button class="cal-btn btn-function">(</button>
+                    <button class="cal-btn btn-function">)</button>
+                    <button class="cal-btn btn-function">%</button>
+                    <button class="cal-btn btn-function">AC</button>
+
+                    <button class="cal-btn">7</button>
+                    <button class="cal-btn">8</button>
+                    <button class="cal-btn">9</button>
+                    <button class="cal-btn btn-function">÷</button>
+
+                    <button class="cal-btn">4</button>
+                    <button class="cal-btn">5</button>
+                    <button class="cal-btn">6</button>
+                    <button class="cal-btn btn-function">*</button>
+
+                    <button class="cal-btn">1</button>
+                    <button class="cal-btn">2</button>
+                    <button class="cal-btn">3</button>
+                    <button class="cal-btn btn-function">-</button>
+
+                    <button class="cal-btn">0</button>
+                    <button class="cal-btn">.</button>
+                    <button class="cal-btn btn-special">=</button>
+                    <button class="cal-btn btn-function">+</button>
+                </div>    
+            </div>
+
+        </body>
+    </html>
