@@ -1,0 +1,55 @@
+p span {
+    color: #5860d2;
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+}
+
+/* Equals button */
+
+#equal {
+    background-color: #4285F4;
+    color: white;
+}
+
+#equal:hover {
+    background-color: rgb(0, 255, 221);
+    color: black;
+}
+
+#calc-field {
+    width: 420px;
+    text-align: right;
+}
+
+.cal-btn {
+    border: none;
+    border-radius: 10%;
+    width: 100px;
+    height: 35px;
+    margin: 2px;
+}
+
+/* operator buttons */
+.sign {
+    background-color: #DFE1E5;
+}
+
+.cal-btn:hover {
+    background-color: rgb(0, 255, 221);
+    color: black;
+}
+
+.rad-deg {
+    width: 208px;
+}
+
+.rad {
+    text-align: center;
+}
+
+.deg {
+    text-align: right;
+}
