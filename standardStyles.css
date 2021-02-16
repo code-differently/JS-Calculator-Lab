@@ -1,0 +1,106 @@
+
+.calc-container {
+  margin: center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.calc-grid { 
+  height: 500px;
+  width: 580px;
+  background-color: white;
+  padding: 22px, 24px, 24px, 25px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.standard-scientific-btn {
+  margin-top: 10px;
+}
+
+.standard-scientific-btn span {
+  font-size: 20px;
+}
+
+#standard {
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+#scientific {
+  margin-left: 9px;
+}
+
+a:hover {
+  color: blue;
+}
+
+
+
+.display {
+  width: 485px; 
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 30px;
+  padding: 20px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+button {
+  width: 122px;
+  height: 54px;
+  font-size: 20px;
+  margin-right: 9px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: .5px solid #f1f3f4;
+  background-color: #f1f3f4;
+  justify-content: center;
+}
+
+.row1 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.row2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.row3 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.row4 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.row5 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.row5-2 {
+  font-weight: bold;
+}
+
+.row5-3 {
+  background-color: rgb(28, 112, 209);
+    color: white;
+}
+
+#darker-gray {
+  background-color: rgb(160, 160, 160);
+}
