@@ -1,0 +1,172 @@
+/**** Shared Styles ****/
+
+.margin-3 {
+  margin: 0.3rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.border {
+  border: 1px solid rgb(223, 225, 229);
+}
+
+.squircle {
+  border-radius: 10px;
+}
+
+/* a {
+  color: blue;
+}
+
+a:hover {
+  color: teal;
+}
+
+a:visited {
+  color: purple;
+} */
+
+#standard-button {
+  color: blue;
+  text-decoration: underline;
+}
+
+#standard-button:hover {
+  color: rgb(197, 197, 0) !important;
+  cursor: pointer;
+}
+
+#scientific-button {
+  color: black;
+}
+
+#scientific-button:hover {
+  color: rgb(197, 197, 0) !important;
+  cursor: pointer;
+}
+
+#calc-container {
+  width: fit-content;
+  padding: 1rem;
+}
+
+.url-row > * {
+  margin-right: 10px;
+  font-size: 19px;
+}
+
+.row {
+  display: flex;
+}
+
+input {
+  margin: 0.7rem 0.3rem;
+  width: 94%;
+  height: 1.7em;
+  font-size: 40px;
+  text-align: right;
+}
+
+button {
+  border-radius: 10px;
+  background-color: rgb(247, 140, 140);
+  border: none;
+  outline: none;
+  font-size: 19px;
+  width: 7rem;
+  height: 3rem;
+  margin: 0.3rem;
+  background-color: rgb(223, 225, 229);
+}
+
+/* Sometimes the HTML unicode size is small. This makes it larger */
+.button-symbols {
+  font-size: 24px;
+}
+
+.rad-deg-button {
+  width: 14.6rem;
+  color: rgb(140, 142, 145);
+}
+
+.rad-deg-button > * {
+  padding: 1.2rem;
+}
+
+.rad-deg-button :first-child {
+  color: black;
+}
+
+.btn-light-gray {
+  background-color: rgb(241, 243, 244);
+}
+
+.btn-blue {
+  background-color: rgb(66, 133, 244);
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(215, 217, 221);
+}
+
+button.btn-light-gray:hover {
+  background-color: rgb(232, 234, 235);
+}
+button.btn-blue:hover {
+  background-color: rgb(77, 139, 241);
+}
+
+/* Hidden by default. Enabled by Javascript. */
+.scientific-btn-left {
+  display: none;
+}
+
+/* Hidden by default. Enabled by Javascript. */
+.scientific-btn-bottom {
+  display: none;
+}
+
+@media (min-width: 1105px) {
+  input {
+    width: 98.7%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .rad-deg-button {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 542px) {
+  input {
+    width: 97%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  button {
+    width: 25%;
+  }
+
+  .scientific-btn-bottom {
+    margin-left: 0;
+  }
+
+  .rad-deg-button {
+    width: 53%;
+  }
+
+  .rad-deg-button > * {
+    padding: 0.6rem;
+  }
+}

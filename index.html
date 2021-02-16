@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <Link rel="stylesheet" href="./styles.css">
+
+    <title>Calculator</title>
+</head>
+
+
+<body class="d-flex justify-center">
+
+
+
+
+    <div id="calc-container" class="border squircle">
+
+        <div class="url-row d-flex margin-3">
+            <a id="standard-button">Standard</a>
+            <span>|</span>
+            <a id="scientific-button">Scientific</a>
+        </div>
+
+        <input type="text" class="border squircle">
+
+        <div class="row">
+            <div class="scientific-btn-left">
+                <button class="rad-deg-button">
+                    <span>Rad</span>
+                    <span>|</span>
+                    <span>Deg</span>
+                </button>
+            </div>
+            <button class="scientific-btn-left">x!</button>
+            <button>(</button>
+            <button>)</button>
+            <button>%</button>
+            <button>AC</button>
+        </div>
+
+        <div class="row">
+            <button class="scientific-btn-left btn-light-gray">Inv</button>
+            <button class="scientific-btn-left">sin</button>
+            <button class="scientific-btn-left">In</button>
+            <button class="btn-light-gray">7</button>
+            <button class="btn-light-gray">8</button>
+            <button class="btn-light-gray">9</button>
+            <button class="button-symbols">&divide;</button>
+        </div>
+        <div class="row ">
+            <button class="scientific-btn-left">&#960;</button>
+            <button class="scientific-btn-left">cos</button>
+            <button class="scientific-btn-left">log</button>
+            <button class="btn-light-gray">4</button>
+            <button class="btn-light-gray">5</button>
+            <button class="btn-light-gray">6</button>
+            <button class="button-symbols">&times;</button>
+        </div>
+        <div class="row ">
+            <button class="scientific-btn-left">e</button>
+            <button class="scientific-btn-left">tan</button>
+            <button class="scientific-btn-left">&#10003</button>
+            <button class="btn-light-gray">1</button>
+            <button class="btn-light-gray">2</button>
+            <button class="btn-light-gray">3</button>
+            <button class="button-symbols">&minus;</button>
+        </div>
+        <div class="row ">
+            <button class="scientific-btn-left">Ans</button>
+            <button class="scientific-btn-left">EXP</button>
+            <button class="scientific-btn-left">X<sup>y</sup></button>
+            <button class="btn-light-gray">0</button>
+            <button class="btn-light-gray" style="font-weight: bold;">.</button>
+            <button class="btn-blue">=</button>
+            <button class="button-symbols">&plus;</button>
+        </div>
+
+        <div class="scientific-btn-bottom">
+            <button class="rad-deg-button">
+                <span>Rad</span>
+                <span>|</span>
+                <span>Deg</span>
+            </button>
+            <button>x!</button>
+        </div>
+
+        <div class="scientific-btn-bottom">
+            <button>Inv</button>
+            <button>sin</button>
+            <button>In</button>
+        </div>
+
+        <div class="scientific-btn-bottom">
+            <button>&#960;</button>
+            <button>cos</button>
+            <button>log</button>
+        </div>
+
+        <div class="scientific-btn-bottom">
+            <button>e</button>
+            <button>tan</button>
+            <button>&#10003</button>
+        </div>
+
+        <div class="scientific-btn-bottom">
+            <button>Ans</button>
+            <button>EXP</button>
+            <button>X<sup>y</sup></button>
+        </div>
+    </div>
+
+    <script src="scientific-calculator-enabler.js"></script>
+</body>
+
+</html>
