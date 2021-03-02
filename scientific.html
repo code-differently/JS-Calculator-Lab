@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="standard.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <h2><a href="scientific.html">Scientific</a> <a href="standard.html">Standard </a></h2>
+<div class="container">
+    <div class ="calculator">
+       <input type="text" id ="calfield2" value ="">
+       <div class = "calculator-buttons">
+            <div class ="toprow">
+               <button class="symbols2" id="Rad">Rad|Deg</button>
+               <button class="symbols">x!</button>
+               <button onclick="clk('&#40;')" class="symbols">(</button>
+               <button onclick="clk('&#41;')" class="symbols">)</button>
+               <button onclick="clk('&#65285')" class="symbols">%</button>
+               <button onclick="clrdisp()" class="symbols">AC</button>
+            </div>
+            <div>
+               <button onclick="" class="symbols">Inv</button>
+               <button class="symbols">sin</button>
+               <button class="symbols">In</button>
+               <button onclick="clk(7)" class="numbers">7</button>
+               <button onclick="clk(8)" class="numbers">8</button>
+               <button onclick="clk(9)" class="numbers">9</button>
+               <button class="symbols">/</button>
+            </div>
+            <div>
+                <button class="symbols">&#960</button>
+                <button class="symbols">Cos</button>
+                <button class="symbols">log</button>
+                <button onclick="clk(4)" class="numbers">4</button>
+                <button onclick="clk(5)" class="numbers">5</button>
+                <button onclick="clk(6)" class="numbers">6</button>
+                <button class="symbols">x</button>
+            </div>
+            <div>
+                <button class="symbols">e</button>
+                <button class="symbols">tan</button>
+                <button class="symbols">&#8730</button>
+                <button onclick="clk(1)" class="numbers">1</button>
+                <button onclick="clk(2)" class="numbers">2</button>
+                <button onclick="clk(3)" class="numbers">3</button>
+                <button class="symbols">-</button>
+            </div>
+            <div>
+                <button class="symbols">Ans</button>
+                <button class="symbols">Exp</button>
+                <button class="symbols">x&#178</button>
+                <button onclick="clk(0)" class="numbers">0</button>
+                <button class="symbols">.</button>
+                <button onclick="eql('=')" class="symbols"id= "equalsign">=</button>
+                <button onclick="clk('+')"  class="symbols">+</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="standard.js"></script>
+</body>
+</html>
