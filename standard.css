@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#equalsign {
+background-color: #4285f4;
+}
+
+h2 {
+text-align: center;
+}
+
+input {
+  text-align: right;
+  display: flex;
+  margin: auto;
+  margin-top: 3rem;
+
+}
+
+/* style   */
+
+#calfield {
+  min-height: 4rem;
+  margin-bottom: 1rem;
+  width: 315px;
+  padding:10px;
+}
+#calfield2 {
+  min-height: 4rem;
+  margin-bottom: 1rem;
+  width: 560px;
+  padding:10px;
+}
+.symbols2 {
+  background-color: #aaaaaa; /* grey */
+  padding: 25px;
+  font-size: 25px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  width:160px;
+}
+
+#Rad {
+  width: 181px;
+  font-size: 25;
+}
+
+.symbols {
+  background-color: #aaaaaa; /* grey */
+  padding: 25px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  width:79px;
+}
+.numbers {
+  background-color: #f7f0f0; /* grey */
+  padding: 25px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  width:79px;
+}
+button {
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  border: solid;
+  margin: 7px 10px;
+}
+
+button:hover {
+  background-color:aqua;
+
+}
+#equalsign:hover {
+  background-color: aqua;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin-top: 4rem;
+
+}
+
+.calculator {
+  display:inline-grid;
+  border-color: black;
+  background-color: white;
+  border-style: solid;
+  text-justify: auto;
+  justify-content:space-around;
+}

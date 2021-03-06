@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="standard.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Calculator</title>
+</head>
+<body>
+    <h2><a href="scientific.html">Scientific</a> <a href="standard.html">Standard </a></h2>
+
+    <div class="container">
+      <div class="calculator"> 
+       <div class="row"> 
+       <input type="text" id="calfield" value="">
+       <div class="calculator-buttons">
+          <div>
+             <button onclick="clk('&#40;')" class="symbols">(</button> 
+              <button onclick="clk('&#41;')" class="symbols">)</button>
+              <button onclick="clk('&#65285')" class="symbols">%</button>
+              <button onclick="clrdisp()" class="symbols">AC</button>
+          </div>
+          <div>
+              <button onclick="clk(7)" class="numbers">7</button>
+              <button onclick="clk(8)" class="numbers">8</button>
+              <button onclick="clk(9)" class="numbers">9</button>
+              <button onclick="clk('/')" class="symbols">&divide</button> 
+          </div>
+          <div>
+              <button onclick="clk(4)" class="numbers">4</button>
+              <button onclick="clk(5)" class="numbers">5</button>
+              <button onclick="clk(6)" class="numbers">6</button>
+              <button onclick="clk('*')" class="symbols">*</button> 
+          </div>
+          <div>
+              <button onclick="clk(1)" class="numbers">1</button>
+              <button onclick="clk(2)" class="numbers">2</button>
+              <button onclick="clk(3)" class="numbers">3</button>
+              <button onclick="clk('-')" class ="symbols">-</button> 
+          </div> 
+          <div>
+              <button onclick="clk(0)" class="numbers">0</button>
+              <button onclick="clk('.')" class="numbers">.</button>
+              <button onclick="eql('=')" class="symbols" id= "equalsign">=</button>
+              <button onclick="clk('+')" class="symbols">+</button> 
+          </div>
+          </div>
+     </div>
+     </div>
+    </div>
+    <script src="standard.js"></script>
+</body>
+</html>
